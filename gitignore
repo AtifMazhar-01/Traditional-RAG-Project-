@@ -1,0 +1,49 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables (keep .env.example, ignore real .env)
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Hugging Face / model caches (local downloads can be large)
+.cache/
+huggingface/
+
+# FAISS vector store (rebuilt from documents)
+data/vectorstore/*
+!data/vectorstore/.gitkeep
+
+# Uploaded user documents (keep sample docs; ignore extra uploads if desired)
+# Uncomment the next line if you do not want to commit uploaded files:
+# data/documents/*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
